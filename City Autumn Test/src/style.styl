@@ -1,0 +1,324 @@
+@import "nib"
+
+/* Colors */
+$sky-blue = #D8E9E8
+$snow-white = #fff
+$sun-yellow = #FBB040
+$atlantic-blue = #9CC5CA
+$sand-yellow = #FFDE2F
+$mountain-yellow = #FBAB18
+$fall-orange = #F26522
+$tree-brown = #7A4900
+$mountain-brown = #A84D10
+
+/* SVG Colors */
+.sky-blue
+  fill $sky-blue
+.snow-white
+  fill $snow-white
+.sun-yellow
+  fill $sun-yellow
+.atlantic-blue
+  fill $atlantic-blue
+.sand-yellow
+  fill $sand-yellow
+.mountain-yellow
+  fill $mountain-yellow
+.fall-orange
+  fill $fall-orange
+.tree-brown
+  fill $tree-brown
+.mountain-brown
+  fill $mountain-brown
+.style9
+  stroke #7A4900
+  stroke-miterlimit  10
+  fill none
+.style10
+  fill #663700
+.style11
+  fill #D4ECE3
+.style12
+  fill #B45014
+.style13
+  fill-rule  evenodd
+  clip-rule  evenodd
+  fill #FBAB18
+.style14
+  fill-rule  evenodd
+  clip-rule  evenodd
+  fill #F26522
+.style15
+  fill-rule  evenodd
+  clip-rule  evenodd
+  fill #7A4900
+.style16
+  fill #A7C8CA
+.style17
+  fill #7A4900
+  clip-rule  evenodd
+  fill-rule  evenodd
+.style18
+  fill #DF6420
+.style19
+  fill-rule  evenodd
+  clip-rule  evenodd
+  fill #663700
+.style20
+  fill #6D6E71
+.style21
+  fill #E86D1F
+.style22
+  fill #151C24
+.style23
+  fill #FFE23C
+
+.boat, .sand-bar
+  display none
+
+/* Fonts */
+@font-face
+    font-family 'MuseoSans'
+    src url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/179037/museosans_100_italic-webfont.woff') format('woff')
+    font-weight 100
+    font-style italic
+
+@font-face
+    font-family 'MuseoSans'
+    src url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-179037/museosans_100-webfont.woff') format('woff')
+    font-weight 100
+    font-style normal
+
+@font-face
+    font-family 'MuseoSans'
+    src url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-179037/museosans_700_italic-webfont.woff') format('woff')
+    font-weight 700
+    font-style italic
+
+@font-face
+    font-family 'MuseoSans'
+    src url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-179037/museosans_700-webfont.woff') format('woff')
+    font-weight 700
+    font-style normal
+
+/* Animations */
+// Opening Sequence
+@keyframes pan-mural-landscape
+  0%
+    transform translate3d(0, 0, 0)
+  100%
+    transform translate3d(-25%, 0, 0)
+
+@keyframes pan-mural-portrait
+  0%
+    transform translate3d(0, 0, 0)
+  100%
+    transform translate3d(-100%, 0, 0)
+
+@media screen and (orientation: landscape) and (max-aspect-ratio: 2/1)
+  .mural
+    transform translate3d(0, 0, 0)
+    animation pan-mural-landscape 8s forwards ease
+
+@media screen and (orientation: portrait)
+  .mural
+    transform translate3d(0, 0, 0)
+    animation pan-mural-portrait 10s forwards ease
+
+@keyframes darken-sky
+  0% 
+    background-color $sky-blue
+    fill $sky-blue
+  70%
+    background-color darken($fall-orange, 30%)
+    fill darken($fall-orange, 30%)
+  100%
+    background-color darken($sky-blue, 80%)
+    fill darken($sky-blue, 80%)
+
+.sky, body
+  animation darken-sky 2s 2s forwards
+
+@keyframes sunset-clouds
+  0%
+    opacity 100
+    fill $snow-white
+  10%
+    fill $mountain-yellow
+  100%
+    opacity 0
+
+.cloud
+  animation sunset-clouds 1s 3s forwards
+
+@keyframes hide
+  0%
+    opacity 100
+  100%
+    opacity 0
+
+.sun
+  animation hide 1s 3s forwards
+
+@keyframes darken-ocean
+  0%
+    background-color $atlantic-blue
+    fill $atlantic-blue
+  100%
+    background-color darken($atlantic-blue, 70%)
+    fill darken($atlantic-blue, 70%)
+
+.ocean, .spring
+  animation darken-ocean 2s 2s forwards
+
+// The city lights up.
+@keyframes duke-energy-colors
+  0%
+    fill $fall-orange
+  50%
+    fill $sand-yellow
+  60%
+    fill $fall-orange
+  100%
+    fill $sand-yellow
+
+.duke-energy, .duke-energy-outline
+  animation duke-energy-colors 4s 3s infinite forwards
+
+@keyframes building-lights
+  0%
+    fill $sand-yellow
+  100%
+    fill lighten($sand-yellow, 60%)
+
+.building-lights rect:nth-child(even)
+  animation building-lights 1.5s 3s infinite alternate forwards
+
+.building-lights rect:nth-child(odd)
+  animation building-lights 1s 3s infinite alternate forwards
+
+@keyframes bofa-lights
+  0%
+    fill lighten($sand-yellow, 40%)
+  100%
+    fill $sand-yellow
+
+.bofa.fall-orange:nth-child(3n+3)
+  animation bofa-lights 1s 3s infinite alternate
+
+//2nd
+.bofa.fall-orange:nth-child(3n+1)
+  animation bofa-lights 1s 3.5s infinite alternate
+
+//top
+.bofa.fall-orange:nth-child(3n+2)
+  animation bofa-lights 1s 4.5s infinite alternate
+
+// Fly the plane
+@keyframes fly
+  0%
+    transform translate3d(0, 0, 0)
+  100%
+    transform translate3d(7000px, 0, 0)
+
+.plane
+  animation fly 8s 5s forwards ease-out
+ 
+// Make it snow!
+// HT: https://designshack.net/articles/css/make-it-snow-on-your-website-with-css-keyframe-animations/
+@keyframes snowing
+  0%
+    background-position 0 0, 0 0, 0 0
+  100%
+    background-position 500px 1000px, 400px 400px, 300px 300px
+
+@keyframes show
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+.snow
+  background-image url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/179037/snowh.png'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/179037/snow3q.png'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-179037/snow2l.png')
+  animation show 0.25s 5s forwards, snowing 5s linear infinite
+
+.message
+  animation show 0.5s 6s forwards
+
+body
+  margin 0
+  overflow hidden
+  font-family "Museo Sans", "MuseoSans", sans-serif
+  font-weight 100
+  font-style italic
+  font-size 62.5%
+  background $sky-blue
+
+.credits
+  opacity 0
+
+.stage
+  position relative
+  height 100%
+  width 100%
+  height 100vh
+  overflow hidden
+
+.ocean
+  position fixed
+  width 100%
+  height 32.3%
+  background-color $atlantic-blue
+  bottom 0
+
+.mural
+  position relative
+  left 0
+  bottom 0
+  display block
+  height 100%
+  height 100vh
+  z-index 1
+
+.snow
+  position absolute
+  opacity 0
+  top 0
+  left 0
+  right 0
+  bottom 0
+  z-index 2
+
+.message
+  width 100%
+  padding-top 2em
+  padding-top 5vh
+  color $sand-yellow
+  text-shadow 2px 2px 4px #000
+  text-transform uppercase
+  font-size 2.6em
+  line-height 2.6em
+  position absolute
+  top 0
+  z-index 35
+  opacity 0
+  text-align center
+  h1
+    font-size 10vh
+    margin 0
+    font-weight 700
+    line-height 1em
+    margin-bottom 0.25em
+    margin-bottom 1vh
+  h2
+    font-size 6vh
+    margin 0
+    line-height 1em
+    font-style normal
+    font-weight 100
+
+@media screen and (orientation: portrait)
+  .message h1
+    font-size 7vh
+  .message h2
+    font-size 5vh
