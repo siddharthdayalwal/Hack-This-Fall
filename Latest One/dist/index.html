@@ -6,87 +6,127 @@
   <title>Hack This Fall</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 	<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./footer.css">
+
 
 </head>
 <body>
 	<!-- main -->
  	<div class="main container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-light" style="z-index: 1; background-color: #FFE3B9;">
-			<a class="navbar-brand" href="#">HTF</a>
+			<a class="navbar-brand" href="#"><img src="asset/HTF-Logo-T.png" height="50"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+						<a class="nav-link" href="#track">Track</a>
+					</li>
+          <li class="nav-item">
+						<a class="nav-link" href="#sponsor">Sponsor</a>
+					</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#speaker">Speaker</a>
+          </li>
 					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
+						<a class="nav-link" href="#faq">FAQ</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#footer">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		
+
 		<div id = "home" class="inner row">
 			<div class="col-12  logo">
 				<img src="asset/HTF-Logo-T.png" alt="coder" />
 			</div>
 			<div class="col-12  logo-content">
-				<p class="logo-content-head">Lorem ipsum dolor sit amet.</p>
-				<p class="logo-content-subhead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore odio
-					pariatur! Et, ipsam nam!</p>
+				<p class="logo-content-head"><h1><b>31st October - 1st November</b></h1></p>
+				<p class="logo-content-subhead"><h4>24 Hours Virtual Hackathon</h4></p>
 				<button type="button" class="btn btn-primary btn-lg register">Register</button>
 			</div>
 		</div>
 	</div>
-	
+
 
 <div style="height: 300px;">
 
 </div>
 
+<!--  FOOTER START -->
 
-<!-- footer -->
-<div class="footer" id= "footer">
-	<div class="row">
-		<div class="col-sm-4">
-			<p>Quote</p>
-			<p>Lorem ipsum dolor sit amet.</p>
-		</div>
-		<div class="col-sm-4">
-			<p>Extra</p>
-			<p>Lorem ipsum dolor sit amet.</p> 
-		</div>
-		<div class="col-sm-4">
-			<p>Lorem ipsum dolor sit amet.</p>
-			<ul>
-				<li>Twitter</li>
-				<li>INstagram</li>
-				<li>Linkedin</li>
-			</ul>
-		</div>
+<div class="footer" id="contact">
+<div class="inner-footer">
 
-	</div>
+<!--  for company name and description -->
+  <div class="footer-items">
+    <h1>Hack This Fall</h1>
+    <p>24 Hours Virtual Hackathon.</p>
+  </div>
+
+<!--  for quick links  -->
+  <div class="footer-items">
+    <h3>Links</h3>
+    <div class="border1"></div> <!--for the underline -->
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#track"><li>Track</li></a>
+        <a href="#sponsor"><li>Sponsor</li></a>
+        <a href="#speaker"><li>Speaker</li></a>
+        <a href="#faq"><li>FAQ</li></a>
+
+      </ul>
+  </div>
+
+<!--  for some other links -->
+  <div class="footer-items">
+    <h3>Read it</h3>
+    <div class="border1"></div>  <!--for the underline -->
+      <ul>
+        <a href="#"><li>Code Of Conduct</li></a>
+        <a href="#"><li>What is Hackathon?</li></a>
+        <a href="#"><li>Regsiter Here</li></a>
+      </ul>
+  </div>
+
+<!--  for contact us info -->
+  <div class="footer-items">
+    <h3>Contact us</h3>
+    <div class="border1"></div>
+      <ul>
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Virtual</li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+      </ul>
+
+<!--   for social links -->
+      <div class="social-media">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+      </div>
+  </div>
 </div>
 
-<!-- script -->
+<!--   Footer Bottom start  -->
+<div class="footer-bottom">
+  © 2020, Hacktober Hacks. All rights reserved.
+</div>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	crossorigin="anonymous"></script>
-<!-- <script  src="./script.js"></script> -->
+
+<!--   Footer Bottom end -->
+
+<!--   FOOTER END -->
+
+
 
 </body>
 </html>

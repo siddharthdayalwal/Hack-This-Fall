@@ -7,8 +7,8 @@ body {
 	background-color: #FFE3B9;
 }
 a
-{	
-	text-decoration:none;	
+{
+	text-decoration:none;
 }
 
 ul {
@@ -49,12 +49,12 @@ ul {
 	font-size: 20px;
 }
 
-.footer {
+/* .footer {
 	height: 350px;
-	text-align: center	; 
-	background-color: black; 
+	text-align: center	;
+	background-color: black;
 	color:white;
 }
 .footer p {
 	margin-top: 10%;
-}
+} */
