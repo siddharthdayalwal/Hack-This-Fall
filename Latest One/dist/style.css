@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body
+{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Nunito Sans', sans-serif;
+}
+a
+{	text-decoration:none;	}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.outer
+{
+	width:100%;
+	height:100vh;
+	background:url('asset/bg3.png') no-repeat center center fixed;
+	background-size:cover;
+
+}
+.inner
+{
+	width:100%;
+	height:100vh;
+	background:#FFE3B9;
+	display:flex;
+	text-align:center;
+	align-items:center;
+	transition:all 0.3s linear;
+	z-index:0;
+	border-radius:3px;
+	box-shadow: 0 0px 20px rgba(0,0,0,0.29), 0 0px 6px rgba(0,0,0,0.35);
+		background:url('../bg7.svg') no-repeat center center fixed;
+	background-size:cover;
+	}
+.inner-hover
+{
+    transform-origin: 75% 50%;
+    transform: scale(0.85,0.85);
+
+}
+.prod-logo
+{
+    width: 7%;
+    height: 100vh;
+	position:absolute;
+	left:0;right:0;
+	z-index:1;
+	padding:20px 0 0 20px;
+}
+.prod-img
+{
+	width:70px;
+	height:70px;
+	margin:0px auto;
+	border-radius:3px;
+	padding:5px;
+	transition:background 0.3s linear;
+}
+.prod-left
+{
+	width:55%;
+	text-align:center;
+	padding-left:75px;
+}
+.prod-right
+{
+	width:45%;
+}
+.prod-human-img
+{
+	width:300px;
+	height:350px;
+}
+.prod-head
+{
+	margin-left:-5px !important;
+	text-align:center;
+	font-weight:800;
+	font-size:20pt;
+	color:#000000;
+	margin:0;
+}
+.prod-head-sub
+{
+   font-weight:400;
+	font-size:25pt;
+	color:#6f7576;
+	margin:0 auto;
+}
+.prod-logo:hover .prod-img
+{
+	background:#fff;
+	box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.09), 0 3px 2px -2px rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+}
+.main-nav {
+	float:left;
+	transition: all 2s;
+}
+.main-nav a {
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+	display: block;
+	color: #0f457f;
+	font-size:15pt;
+	font-weight:600;
+}
+.nav-li
+{
+	cursor:pointer;
+	line-height:2;
+	display: none;
+}
+.nav-li a {
+  position: relative;
+}
+.nav-li a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #f68712;
+  transition: width 0.4s ease 0s;
+  width: 0;
+}
+.nav-li a:hover:after {
+  width: 100%;
+}
