@@ -1674,3 +1674,20 @@ html.w-mod-js *[data-ix="awwwwwards"] {
         width: 25%;
     }
  }
+
+
+ .main-heading-wrapper {
+   text-align: center;
+ }
+ .main-heading-wrapper img {
+   height: 300px;
+   width: 450px;
+ }
+
+ @media screen and (max-width: 450px) {
+
+ .main-heading-wrapper img {
+   height: 150px;
+   width: 250px;
+ }
+}
