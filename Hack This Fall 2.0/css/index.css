@@ -1650,12 +1650,12 @@ html.w-mod-js *[data-ix="awwwwwards"] {
   }
 }
 .header .head_btn{
-  font-family:'Press Start 2P', cursive;
+  /* font-family:'Press Start 2P', cursive; */
   padding-top:20px;
 }
 .head_btn .btn{
-  background-color: #7787ec;
-  color:#ffffff;
+  background-color: #FF6D00;
+  color:black;
   padding:14px 28px;
   margin-left:3px;
   border-radius:6px;
