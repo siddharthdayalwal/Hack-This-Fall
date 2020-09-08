@@ -132,12 +132,12 @@ p {
   padding: 16px 0px 16px 29px;
   -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
-  color: #FF6D00;
+  color: black;
   font-size: 19px;
   text-transform: capitalize;
 }
 .nav-link:hover {
-  color: black;
+  color: #FF6D00;
 }
 .section {
   padding-top: 100px;
@@ -234,7 +234,7 @@ p {
 }
 .main-heading-wrapper {
   position: relative;
-  margin-top: 25px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
 .object {
@@ -445,7 +445,7 @@ p {
   margin-right: 1px;
   margin-bottom: 1px;
   padding: 20px;
-  box-shadow: #e3e3e3 0px 0px 0px 1px;
+  box-shadow: #420000 0px 0px 0px 1px;
 }
 .left-heading {
   text-align: left;
@@ -1681,13 +1681,4 @@ html.w-mod-js *[data-ix="awwwwwards"] {
  }
  .main-heading-wrapper img {
    height: 300px;
-   width: 450px;
  }
-
- @media screen and (max-width: 450px) {
-
- .main-heading-wrapper img {
-   height: 150px;
-   width: 250px;
- }
-}
