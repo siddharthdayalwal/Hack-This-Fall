@@ -70,9 +70,9 @@ ul {
     width: 20px;
     height: 20px;
     background-color: transparent;
-    color: #ff5f74;
+    
     text-align: center;
-    border: 1px solid #ff5f74;
+
     border-radius: 50%;
     line-height: 100%;
     content: '\f067';
@@ -93,7 +93,7 @@ ul {
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
     content: '\f068';
     color: #fff;
-    background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #ff5f74 30%, #a85fff 100%);
+    background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #5e7eff 30%, #5e7eff 100%);
 }
 
 .faq .accordion .card .card-body {
@@ -108,3 +108,4 @@ ul {
     color: rgba(30, 48, 86, 0.8);
     line-height: 30px;
 }
+
