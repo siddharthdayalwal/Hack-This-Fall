@@ -3264,8 +3264,8 @@ p {
 
 .note-text.btw {
     padding-top: 18px;
-    padding-right: 30px;
-    padding-left: 30px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
     background-position: 100% 0px;
     background-size: 26px;
     background-repeat: no-repeat;
@@ -3553,7 +3553,7 @@ html.w-mod-js *[data-ix="awwwwwards"] {
         padding-top: 27px;
         padding-bottom: 27px;
         padding-left: 0px;
-        color: #232741;
+        color: #ffffff;
         font-size: 57px;
         line-height: 41px;
         text-align: center;
@@ -4984,5 +4984,11 @@ a {
 @media only screen and (max-width: 440px) {
   .snip1265 .plan {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .header a{
+    color: white;
   }
 }
