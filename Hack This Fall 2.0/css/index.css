@@ -4934,8 +4934,8 @@ a {
 }
 .snip1265 .plan-features li {
   padding: 5px 5%;
-  /* font-weight: 500; */
-  /* opacity: 0.5; */
+  font-weight: 500;
+  opacity: 0.5;
   border-left: 5px solid #f39c12;
   margin: 2px 20px;
 }

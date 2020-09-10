@@ -20,6 +20,7 @@ section .section-title {
 #team .card {
     border: none;
       background: #FFECE1;
+      padding-top: 30px;
 }
 
 .image-flip:hover .backside,
