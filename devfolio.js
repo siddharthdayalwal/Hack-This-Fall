@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
-        buttonSelector: '#devf
-olio-apply-now',
+        buttonSelector: '#devfolio-apply-now',
         key: 'hackthisfall',
     }
 

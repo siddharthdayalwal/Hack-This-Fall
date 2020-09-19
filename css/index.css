@@ -4999,6 +4999,9 @@ a {
 /* devfolio */
 
 #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
     background-color: #3770FF;
     border-radius: 6px;
     border: none;
@@ -5008,8 +5011,9 @@ a {
     font-size: 25px;
     font-weight: 600;
     padding: 12px 20px;
+    text-align: center;
+    text-transform: lowercase;
 }
-
 
 #devfolio-apply-now:not([disabled]) {
     cursor: pointer;
