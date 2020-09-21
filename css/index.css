@@ -88,7 +88,8 @@ dfn {
 hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    height: 0
+    display: block;
+    border-top: 1px solid #FF6D00;
 }
 
 mark {
