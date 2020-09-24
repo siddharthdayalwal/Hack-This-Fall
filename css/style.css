@@ -6169,10 +6169,10 @@ textarea.form-input {
 }
 
 .cssload-speeding-wheel {
-	width: 36px;
-	height: 36px;
+	width: 50px;
+	height: 50px;
 	margin: 0 auto;
-	border: 3px solid #d90e90;
+	border: 5px solid #121212;
 	border-radius: 50%;
 	border-left-color: transparent;
 	border-bottom-color: transparent;
