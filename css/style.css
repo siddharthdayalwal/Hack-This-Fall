@@ -14191,10 +14191,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     margin-top: -10px;
     width: 20px;
     height: 20px;
-    background-color: transparent;
-	
+    background-color: transparent;	
     text-align: center;
-
     border-radius: 50%;
     line-height: 100%;
     content: '+';
