@@ -5236,7 +5236,7 @@ textarea.form-input {
 
 .sponsor-overlay {
 	z-index: -1;
-	border-top-color: rgba(248, 247, 244, 0.6);
+	border-top-color: #ff6b00b8;
 	transform: scale(0.3);
 	transform-origin: right top;
 	opacity: 0;
