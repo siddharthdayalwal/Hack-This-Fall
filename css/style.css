@@ -2931,7 +2931,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
-	padding: 19px 39px;
+	padding: 17px 35px;
 	font-size: 18px;
 	line-height: 1.25;
 	border: 0;
@@ -3281,7 +3281,9 @@ hr {
 }
 
 * + .button {
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 .row + .button {
@@ -3296,7 +3298,7 @@ hr {
 
 @media (min-width: 1200px) {
 	* + .button {
-		margin-top: 30px;
+		margin-top: 0px;
 	}
 	* + .button-offset-xl {
 		margin-top: 50px;
@@ -14119,7 +14121,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 18px;
     font-weight: 600;
-    padding: 12px 20px;
+	padding: 10px 20px;
+	padding-bottom: 14px;
     text-align: center;
     
 }
