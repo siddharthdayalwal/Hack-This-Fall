@@ -246,7 +246,7 @@ h3 + img {
 }
 
 .row + .row {
-	margin-top: 35px;
+	margin-top: 0px;
 }
 
 @media (min-width: 1200px) {
@@ -257,7 +257,7 @@ h3 + img {
 		margin-top: 60px;
 	}
 	.row + .row {
-		margin-top: 60px;
+		margin-top: 0px;
 	}
 }
 
@@ -429,13 +429,13 @@ h3 + img {
 		margin-bottom: 30px;
 	}
 	.row-lg-50 {
-		margin-bottom: -50px;
+		margin-bottom: 0px;
 	}
 	.row-lg-50:empty {
 		margin-bottom: 0;
 	}
 	.row-lg-50 > * {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 }
 
