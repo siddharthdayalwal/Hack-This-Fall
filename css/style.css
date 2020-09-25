@@ -14094,6 +14094,11 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 		transform: translateY(0) scale(1) rotate(0);
 	}
 }
+@media (max-width: 600px){
+	.button-secondary{
+		margin-top: 20px !important;
+	}
+}
 
 /** @section Waves */
 .waves {
