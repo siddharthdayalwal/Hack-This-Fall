@@ -2283,7 +2283,7 @@ html .group-custom > * {
 
 @media (min-width: 1200px) {
 	* + .list-inline-md {
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	* + .list-inline-xl {
 		margin-top: 50px;
@@ -8663,7 +8663,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1200px) {
 	.section-swiper-absoulte .section-swiper-content {
-		padding-top: 290px;
+		padding-top: 200px;
 		padding-bottom: 300px;
 	}
 	.section-swiper-absoulte .section-swiper-content-sm {
