@@ -1396,6 +1396,7 @@ h2,
 .heading-2 {
 	font-size: 36px;
 	line-height: 1.2;
+	padding-bottom: 2%;
 }
 
 @media (min-width: 992px) {
@@ -1604,6 +1605,7 @@ h5 + p,
 	h3 + p,
 	.heading-3 + p {
 		margin-top: 40px;
+		margin-bottom: 20px;
 	}
 }
 
