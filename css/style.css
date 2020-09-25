@@ -429,7 +429,7 @@ h3 + img {
 		margin-bottom: 30px;
 	}
 	.row-lg-50 {
-		margin-bottom: 0px;
+		margin-bottom: -10px;
 	}
 	.row-lg-50:empty {
 		margin-bottom: 0;
